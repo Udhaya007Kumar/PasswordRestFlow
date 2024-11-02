@@ -103,7 +103,7 @@ export const Userforgotpassword = async(req,res)=>{
         subject: "Password Reset Link",
         text: `You are receiving this because you have requested the reset of the password for your account 
         Please click the following link or paste it into your browser to complete the process
-        https://mellifluous-stardust-3751e4.netlify.app/reset-password/${user._id}/${otp}`,
+        https://frond-end-password-rest-flow.vercel.app/reset-password/${user._id}/${otp}`,
       };
       transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
